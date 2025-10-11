@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    background-color: #32657C;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+nav {
+    box-shadow:5px 5px 5px rgba(1,1,1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    padding: 15px;
+    background-color:#669BB7;
+    z-index: 50;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bar_icon{
+    font-size: 20px;
+}
+
+
+/* hero section*/
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tag{
+    background-color: rgb(15, 149, 15);
+    padding: 6px 27px;
+    color: white;
+    align-self: flex-start;
+    font-size: 15px;
+}
+
+.hero_cont h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 470;
+    font-size: 70px;
+    letter-spacing: 1.1px;
+}
+
+.explore_btn{
+    background: rgb(200, 133, 10);
+    align-self: flex-start;
+}
+
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature img{
+    width: 72px;
+}
+
+.feature h3{
+    font-size: 15px;
+}
+
+.feature p{
+    font-size: 13px;
+}
+
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px #1f3643;
+}
+
+.divider{
+    border: 1px solid grey;
+    margin: 20px 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu .tag{
+    align-self: center;
+}
+
+.grid-imgage{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.grid-imgage:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3" 
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.item1{
+    grid-area: I1;
+    margin-left: 50px;
+}
+
+.item2{
+    grid-area: I2;
+}
+
+.item3{
+    grid-area: I3;
+}
+
+.item4{
+    grid-area: I4;
+    margin-left: 50px;
+}
+
+.item5{
+    grid-area: I5;
+}
+
+.item6{
+    grid-area: I6;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.item7{
+    grid-area: I7;
+}
+
+footer{
+    background-color: #669BB7;
+}
+
+.footer_cont{
+    padding: 30PX;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.link_list h3{
+    margin-bottom: 10px;
+    color: rgb(68, 6, 6);
+}
+
+.news_letter h3{
+    margin-bottom: 10px;
+    color: rgb(68, 6, 6);   
+}
+
+.link_list ul{
+    list-style: none;
+}
+
+.link_list ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.news_letter input{
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+.icon_cont{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+@media (max-width: 786px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero_img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_img img{
+        width: 90%;
+        max-width: 22vh;
+    }
+
+    .hero_cont{
+        gap:10px;
+        padding: 10px;
+    }
+
+    .hero_cont h1{
+        font-size: 32px;
+    }
+
+    .nav{
+        max-width: 22vh;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .feature{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item6{
+        height: 100%;
+    }
+
+    .grid-imgage{
+        border-radius: 0px;
+        justify-self:center;
+    }
+
+    .footer_cont{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+

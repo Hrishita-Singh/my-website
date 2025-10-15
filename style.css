@@ -272,6 +272,10 @@ footer{
         height: 100%;
     }
 
+    .grid{
+        margin-right:40px;
+    }
+
     .grid-imgage{
         border-radius: 0px;
         justify-self:center;
@@ -282,6 +286,7 @@ footer{
         gap: 20px;
     }
 }
+
 
 
 
